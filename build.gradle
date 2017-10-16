@@ -4,13 +4,20 @@ buildscript {
 	}
 	repositories {
 		mavenCentral()
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+		classpath "net.ltgt.gradle:gradle-apt-plugin:0.12"
 	}
 }
 
+
 apply plugin: 'java'
+//apply plugin: 'net.ltgt.apt'
+apply plugin: 'net.ltgt.apt-idea'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
@@ -25,9 +32,15 @@ repositories {
 
 
 dependencies {
+	apt "org.immutables:value:2.5.5"
+	compileOnly "org.immutables:value:2.5.5:annotations"
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	runtime('org.springframework.boot:spring-boot-devtools')
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '4.1'
 }

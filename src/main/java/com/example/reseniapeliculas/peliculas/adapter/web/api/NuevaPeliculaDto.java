@@ -1,4 +1,4 @@
-package com.example.reseniapeliculas.peliculas.adapter.api;
+package com.example.reseniapeliculas.peliculas.adapter.web.api;
 
 public class NuevaPeliculaDto extends BasePeliculaDto {
     private PosterDto posterDto;

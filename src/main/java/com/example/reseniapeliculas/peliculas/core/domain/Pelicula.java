@@ -3,6 +3,8 @@ package com.example.reseniapeliculas.peliculas.core.domain;
 import com.example.reseniapeliculas.common.utils.ArchivoBinario;
 import com.example.reseniapeliculas.common.utils.Fecha;
 
+//TODO: Review if each attribute deservs its own type.
+// A Movie has a title. What is a title?.
 public class Pelicula {
     private String titulo;
     private String sinopsis;

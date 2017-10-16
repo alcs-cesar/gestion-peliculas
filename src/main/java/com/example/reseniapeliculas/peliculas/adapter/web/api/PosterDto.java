@@ -1,4 +1,4 @@
-package com.example.reseniapeliculas.peliculas.adapter.api;
+package com.example.reseniapeliculas.peliculas.adapter.web.api;
 
 import com.example.reseniapeliculas.common.utils.ArchivoBinario;
 

@@ -1,7 +1,6 @@
-package com.example.reseniapeliculas.peliculas.adapter;
+package com.example.reseniapeliculas.peliculas.adapter.web;
 
-import com.example.reseniapeliculas.peliculas.adapter.api.NuevaPeliculaDto;
-import com.example.reseniapeliculas.peliculas.adapter.api.BasePeliculaDto;
+import com.example.reseniapeliculas.peliculas.adapter.web.api.NuevaPeliculaDto;
 import com.example.reseniapeliculas.peliculas.core.domain.Pelicula;
 import com.example.reseniapeliculas.peliculas.core.domain.builders.PeliculaBuilder;
 import com.example.reseniapeliculas.peliculas.core.boundary.enter.PeliculaEditUseCase;

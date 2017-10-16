@@ -2,19 +2,14 @@ package com.example.reseniapeliculas.peliculas.periphery.web;
 
 import com.example.reseniapeliculas.common.exceptions.io.AccesoDatosException;
 import com.example.reseniapeliculas.common.utils.ArchivoBinario;
-import com.example.reseniapeliculas.peliculas.adapter.PeliculaAdapter;
-import com.example.reseniapeliculas.peliculas.adapter.api.NuevaPeliculaDto;
-import com.example.reseniapeliculas.peliculas.adapter.api.BasePeliculaDto;
-import com.example.reseniapeliculas.peliculas.adapter.api.PosterDto;
+import com.example.reseniapeliculas.peliculas.adapter.web.PeliculaAdapter;
+import com.example.reseniapeliculas.peliculas.adapter.web.api.NuevaPeliculaDto;
+import com.example.reseniapeliculas.peliculas.adapter.web.api.PosterDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.servlet.http.Part;
-import java.io.BufferedInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 
 //TODO:Return RESTful URLs
 @RestController
